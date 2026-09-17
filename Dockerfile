@@ -1,6 +1,7 @@
 FROM kalilinux/kali-rolling
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV OPENAI_API_KEY="ollama"
 
 # 1. Temporary SSL fix for APT and ca-certificates installation
 RUN echo 'Acquire::https::Verify-Peer "false";' > /etc/apt/apt.conf.d/99ssl-fix && \
