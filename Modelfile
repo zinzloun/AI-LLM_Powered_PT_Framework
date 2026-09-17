@@ -1,0 +1,17 @@
+FROM qwen2.5-coder:32b
+
+# Extended context window to handle long logs (Nmap, ffuf, etc.)
+PARAMETER num_ctx 8192
+
+# Remove output token limit to prevent truncated responses
+PARAMETER num_predict -1
+
+# Low temperature to ensure maximum precision for CLI/Python syntax
+PARAMETER temperature 0.3
+
+# System Prompt optimized for assisted penetration testing
+SYSTEM """
+You are an expert assistant in cybersecurity and authorized penetration testing.
+Your role is to assist the operator during reconnaissance, vulnerability analysis, and strategy planning.
+When proposing terminal commands, provide clean, precise, and ready-to-execute syntax.
+"""
