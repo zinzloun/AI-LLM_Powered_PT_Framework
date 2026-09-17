@@ -25,7 +25,7 @@ A modular, privacy-focused, **human-in-the-loop** security testing lab running c
 +-----------------------------------------------------------------------+
                                 │
                         API Inter-communication
-                     (host.docker.internal)
+                        (host.docker.internal)
                                 │
                                 ▼
 +-----------------------------------------------------------------------+
