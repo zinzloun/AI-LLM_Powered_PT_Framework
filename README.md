@@ -62,6 +62,9 @@ Allow Ollama to accept connections from Docker containers and create the context
 launchctl setenv OLLAMA_HOST "0.0.0.0"
 # (Restart the Ollama macOS application after running the command above)
 
+# get the model (+/- 20 GB)
+ollama pull qwen2.5-coder:32b
+
 # Create the custom model
 ollama create pentest-coder -f Modelfile
 ```
