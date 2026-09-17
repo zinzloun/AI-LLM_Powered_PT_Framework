@@ -74,8 +74,8 @@ ollama create pentest-coder -f Modelfile
 Clone this repository and spin up the Kali agent and Juice Shop containers:
 
 ```bash
-git clone https://github.com/your-username/local-ai-pentest-lab.git
-cd local-ai-pentest-lab
+git clone https://github.com/zinzloun/AI-LLM_Powered_PT_Framework.git
+cd AI-LLM_Powered_PT_Framework
 
 # Build and start containers
 docker compose build --no-cache
