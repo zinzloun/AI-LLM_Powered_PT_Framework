@@ -44,7 +44,7 @@ A modular, privacy-focused, **human-in-the-loop** security testing lab running c
 
 ## Prerequisites
 
-* **Hardware:** Apple Silicon Mac (Recommended: 32GB+ Unified Memory).
+* **Hardware:** Apple Silicon Mac (Recommended: 32GB+ Unified Memory - 16 GPU)
 * **Software:**
   * [Ollama](https://ollama.com/)
   * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
