@@ -1,0 +1,16 @@
+services:
+  kali-agent:
+    build: .
+    container_name: kali_agent
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./reports:/pentest/reports
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  juice-shop:
+    image: bkimminich/juice-shop
+    container_name: juice_shop
+    ports:
+      - "3000:3000"
