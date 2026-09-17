@@ -107,7 +107,7 @@ interpreter --api_base http://host.docker.internal:11434/v1 --model openai/pente
 ```text
 > We are starting the Recon phase. Target host is 'juice_shop' on port 3000. 
   Run an nmap scan for open ports and use whatweb to identify technologies. 
-  Save all outputs in /pentest/reports/recon.txt and summarize the results.
+  Save all outputs in ./reports/recon.txt and summarize the results.
 ```
 
 ---
