@@ -105,9 +105,7 @@ interpreter --api_base http://host.docker.internal:11434/v1 --model openai/pente
 ### 3. Example Prompt (Recon Phase)
 
 ```text
-> We are starting the Recon phase. Target host is 'juice_shop' on port 3000. 
-  Run an nmap scan for open ports and use whatweb to identify technologies. 
-  Save all outputs in ./reports/recon.txt and summarize the results.
+> We are starting the Reconnaissance phase against the target container 'juice_shop' on port 3000. Perform a fast Nmap port scan to discover open services, then use whatweb to analyze the web application stack at http://juice_shop:3000. Save all output logs to /pentest/reports/recon.txt and summarize the discovered technologies.
 ```
 
 ---
